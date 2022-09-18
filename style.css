@@ -14,16 +14,28 @@ img {
 /* ==========
  typography 
  ===========*/
+:root {
+  --ff-primary: "Jolly Lodger", cursive;
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
+  --fw-bold: 700;
+  --fw-reg: 300;
+
+  --clr-light: #fff;
+  --clr-accent: #06041ac0;
+  --clr-dark-accent: #120f30;
+}
 body {
   color: #fff;
   max-height: 100vh;
-  background-color: #06041ac0;
+  background-color: var(--clr-accent);
   font-size: 1.2rem;
-  font-family: "Jolly Lodger", cursive;
+  font-family: var(--ff-primary);
   backdrop-filter: blur(10px);
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: var(--fs-h2);
   text-align: center;
 }
 .bold {
@@ -70,7 +82,7 @@ h1.title {
   max-width: 300px;
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid #120f30;
+  border: 2px solid var(--clr-dark-accent);
   box-shadow: 0 0 5px #fff;
 }
 /* border -radius */
@@ -86,7 +98,7 @@ h1.title {
   padding: 1em;
 }
 .img-container {
-  background-color: #120f30;
+  background-color: var(--clr-dark-accent);
   width: 60%;
   border-radius: 8px;
   margin: 0.5em auto;
@@ -94,7 +106,7 @@ h1.title {
 .dice-container {
   display: flex;
   justify-content: space-around;
-  background-color: #120f30;
+  background-color: var(--clr-dark-accent);
   padding: 1em 0;
 }
 .health-bar-container {
