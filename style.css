@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ==========
+ typography 
+ ===========*/
+body {
+  color: #fff;
+  max-height: 100vh;
+  background-color: #06041ac0;
+  font-size: 1.2rem;
+  font-family: "Jolly Lodger", cursive;
+  backdrop-filter: blur(10px);
+}
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.bold {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+h2,
+p {
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  margin: 0;
+}
+.health-bar-container {
+  margin-top: 0.5em;
+}
+button {
+  background-color: rgb(235, 156, 38);
+  color: #4a494d;
+  border: 2px solid red;
+  padding: 0.5em 1.2em;
+  font-family: inherit;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+button:active {
+  transform: scale(0.95);
+}
+.btn-container {
+  text-align: center;
+}
+h1.title {
+  text-align: center;
+}
+
+/* ===========
+ layout 
+ ============*/
+.hero,
+.monster {
+  width: 60%;
+  margin: 1em auto;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #120f30;
+  box-shadow: 0 0 5px #fff;
+}
+/* border -radius */
+.hero,
+.monster,
+.img-container,
+.dice,
+.place-holder {
+  border-radius: 8px;
+}
+.top-section {
+  background-color: rgb(46, 45, 45);
+  padding: 1em;
+}
+.img-container {
+  background-color: #120f30;
+  width: 60%;
+  border-radius: 8px;
+  margin: 0.5em auto;
+}
+.dice-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #120f30;
+  padding: 1em 0;
+}
+.health-bar-container {
+  background-color: black;
+  height: 10px;
+  width: 100%;
+}
+.health-bar {
+  background-color: rgb(34, 116, 34);
+  height: 100%;
+}
+.red-clr {
+  background-color: rgb(192, 43, 43);
+}
+/* place holder of dice */
+.place-holder {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fff;
+  background-color: #222;
+}
+/* showing dice style*/
+.dice {
+  border: 3px solid rgb(0, 0, 0);
+  padding: 1em;
+  background-color: #fff;
+  color: #222;
+}
+
+.endMessage {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+/* style fr PC */
+@media screen and (min-width: 670px) {
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 75vh;
+    margin: 5em auto 1em;
+  }
+  .hero {
+    margin-right: 0.5em;
+  }
+  .hero,
+  .monster {
+    min-width: 250px;
+  }
+}
